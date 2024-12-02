@@ -1,0 +1,78 @@
+.app{
+  width: 100%; /*sempre terá o tamanho do conteudo de dentro*/
+  max-width: 400px; /*porem que nao ultrapasse 400px*/
+}
+
+h1{
+  color: rgb(48, 89, 48);
+  text-align: center;
+}
+
+.search-bar{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.search-bar input{
+  flex: 1; /*como o pai é flex, utilizando flex 1 este elemento irá crescer na linha*/
+  border: none;
+  padding: 10px;
+}
+.search-bar input:focus{
+  outline: none;
+}
+.search-bar button{
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(89, 210, 56);
+}
+.search-icon{
+  font-size: 20px;
+  color: white;
+}
+
+.pokemon-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 128, 0, 0.384);
+  background-color: rgba(172, 238, 172, 0.434);
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.tipo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.valor-tipo{
+  background-color: rgb(189, 189, 10);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.atributos{
+  width: 100%;
+}
+
+.atributos div{
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.265);
+}
+
+.nome-atributo{
+  flex: 1;
+}
+.valor-atributo-maior{
+  color: green;
+}
+.valor-atributo-menor{
+  color: red;
+}
