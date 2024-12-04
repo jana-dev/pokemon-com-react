@@ -5,11 +5,13 @@ import SearchBar from './components/SearchBar'
 
 function App() {
 
+  const [pokemonData, setPokemonData] = useState(null)
+  console.log(pokemonData)
 
   return (
     <div className='app'>
-      <SearchBar/>
-      <PokemonCard/>
+      <SearchBar setPokemonData={setPokemonData}/>
+      <PokemonCard pokemonData={pokemonData}/>
     </div>
   )
 }

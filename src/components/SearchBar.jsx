@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 
-function SearchBar() {
+function SearchBar({setPokemonData}) {
 
     const [searchValue, setSearchValue] = useState("")
 
@@ -13,10 +13,11 @@ function SearchBar() {
                     throw new Error("Pokemon não encontrado, digite novamente", response.status)
                 }
                 const data = await response.json()
-                console.log(data)
+                // console.log(data)
+                setPokemonData(data)
             } catch (error) {
                 console.error("Erro ao buscar pokemon", error.message)
-                
+                setPokemonData(null)
             }
 
         } else {
@@ -32,7 +33,7 @@ function SearchBar() {
                     type="text"
                     placeholder="Digite o nome do Pokemon"
                     value={searchValue}
-                    onChange={(e) => setSearchValue(e.target.value.toLocaleLowerCase())}
+                    onChange={(e) => setSearchValue(e.target.value.toLowerCase())}
                 />
                 <button onClick={handleSearch}>
                     <IoMdSearch className="search-icon" />
