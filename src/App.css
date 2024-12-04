@@ -50,7 +50,6 @@ h1{
 }
 
 .valor-tipo{
-  background-color: rgb(189, 189, 10);
   color: white;
   border-radius: 20px;
   padding: 5px 10px;
@@ -76,3 +75,22 @@ h1{
 .valor-atributo-menor{
   color: red;
 }
+
+.valor-tipo.fire {background-color: orangered;}
+.valor-tipo.water {background-color: rgb(44, 103, 221);}
+.valor-tipo.electric {background-color: yellow;}
+.valor-tipo.grass {background-color: green;}
+.valor-tipo.ice {background-color: rgb(162, 252, 238);}
+.valor-tipo.fighting {background-color: red;}
+.valor-tipo.poison {background-color: purple;}
+.valor-tipo.ground {background-color: brown;}
+.valor-tipo.flying {background-color: rgb(137, 219, 251);}
+.valor-tipo.psychic {background-color: rgb(140, 64, 202);}
+.valor-tipo.bug {background-color: greenyellow;}
+.valor-tipo.rock {background-color: gray}
+.valor-tipo.ghost {background-color: rgb(206, 206, 206);}
+.valor-tipo.dragon {background-color: rgb(82, 14, 191);}
+.valor-tipo.dark {background-color: rgb(21, 21, 21);}
+.valor-tipo.steel {background-color: rgb(143, 143, 143);}
+.valor-tipo.fairy {background-color: rgb(233, 88, 189);}
+.valor-tipo.normal {background-color: rgb(254, 237, 216);}
